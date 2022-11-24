@@ -1,8 +1,8 @@
 {
 	"manifest_version": 3,
 
-	"name": "Jira custom dark mode",
-	"description": "This extension provided an altered light mode and additional dark mode to atlassians jira. It benefits the user experience by providing a more user-friendly design and toggleable light/dark modes.",
+	"name": "Watch2Youtube",
+	"description": "Create W2G Rooms right on youtube",
 	"version": "1.0.3.2",
 	"permissions": ["activeTab"],
 	"icons": {
@@ -12,7 +12,7 @@
 	},
 	"content_scripts": [
 		{
-			"matches": ["*://*.atlassian.net/*", "*://*.herokuapp.com/*"],
+			"matches": ["*://*.youtube.com/*"],
 			"js": ["./content/script.js"],
 			"all_frames": true
 		}
