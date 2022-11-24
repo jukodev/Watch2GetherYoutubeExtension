@@ -3,7 +3,7 @@
 
 	"name": "Watch2Youtube",
 	"description": "Create W2G Rooms right on youtube",
-	"version": "1.0.3.2",
+	"version": "1.0.0.1",
 	"permissions": ["activeTab"],
 	"icons": {
 		"16": "./icons/icon.png",
