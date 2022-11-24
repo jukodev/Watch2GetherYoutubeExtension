@@ -9,6 +9,5 @@ setTimeout(() => {
         fetch(`localhost:4000/rooms?url=${window.location.href}`)
     })
     hook.appendChild(w2gBuddne);
-    console.log("schwanz");
-}, 50)
+}, 500)
 
