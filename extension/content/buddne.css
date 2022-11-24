@@ -1,0 +1,13 @@
+#w2gBuddne:hover {
+    cursor: pointer;
+    background-color: rgb(200,200,200);
+}
+#w2gBuddne {
+    padding: 1rem 1.5rem;
+    margin-left: 1.5rem;
+    border-radius: 2rem;
+    border: none;
+    font-family: "YouTube Sans","Roboto",sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}

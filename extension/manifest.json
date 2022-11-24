@@ -13,6 +13,7 @@
 	"content_scripts": [
 		{
 			"matches": ["*://*.youtube.com/*"],
+			"css": ["./content/buddne.css"],
 			"js": ["./content/script.js"],
 			"all_frames": true
 		}
