@@ -4,7 +4,7 @@ setTimeout(() => {
 	const w2gBuddne = document.createElement("button");
 	w2gBuddne.innerHTML = "W2G";
 	w2gBuddne.id = "w2gBuddne";
-	if(document.querySelector("#notification-preference-button")){
+	if(!document.querySelector("#notification-preference-button").hasAttribute("hidden")){
 		w2gBuddne.style.marginLeft = "0px";
 	}
 	hook.appendChild(w2gBuddne);
