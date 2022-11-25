@@ -12,13 +12,17 @@ setTimeout(() => {
 	  }
 	  
 	  const observer = new MutationObserver(callback);
-	  observer.observe(glogge, {
-		attributeFilter: [ "hidden"],
-		attributeOldValue: true,
-		subtree: true
-	  });
+	  if(glogge){
+		  observer.observe(glogge, {
+			attributeFilter: [ "hidden"],
+			attributeOldValue: true,
+			subtree: true
+		  });
+	  }
 	function toggleMargins() {
-		!glogge.hasAttribute("hidden") ? w2gBuddne.style.marginLeft = "0px" : w2gBuddne.style.marginLeft = "0.8rem";
+		if(glogge){
+			!glogge.hasAttribute("hidden") ? w2gBuddne.style.marginLeft = "0px" : w2gBuddne.style.marginLeft = "0.8rem";
+		}
 	}
 
 	w2gBuddne.innerHTML = "W2G";
