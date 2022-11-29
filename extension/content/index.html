@@ -25,7 +25,6 @@
 			display: flex;
 			flex-direction: column;
 			align-items: center;
-			gap: .5rem;
 			font-family: 'Montserrat', sans-serif;
 		}
 		@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
@@ -48,13 +47,13 @@
 
 .form {
   position: relative;
-  padding: 10px;
+  padding: 5px;
   background: #121212;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
 }
 
 .input-box {
@@ -112,10 +111,24 @@
   border-radius: 6px;
   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25);
 }
+.footer {
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        width: 100%;
+        height: 100px;
+        background: linear-gradient(45deg, #2196f3, #ff4685);
+        clip-path: polygon(73% 68%, 100% 1%, 100% 100%, 0 100%, 0 0);
+    }
+	.buddnewrapper{
+		background-color: white;
+		border-radius: 1.25rem;
+		margin-top: 2rem;
+	}
 		#hagebuddne{
-			margin-top: 1rem;
-			padding: .75rem;
-			background: linear-gradient(45deg, #2196f3, #ff4685);
+			padding: .85rem;
+			background: -webkit-linear-gradient(45deg, #2196f3, #ff4685);
+  			-webkit-background-clip: text;
+  			-webkit-text-fill-color: transparent;
 			border-radius: 1.25rem;
   			transition: background-color 1s ease;
 			font-weight: 900;
@@ -179,7 +192,10 @@
 				  </div>
 				</div>
 			  </div>
-			<button id="hagebuddne">Fortnite</button>
+			  <div class="buddnewrapper">
+				  <button id="hagebuddne">Fortnite</button>
+			  </div>
+			<span class="footer"></span>
 		</div>
 		<script src="redirecter.js">
 		</script>
