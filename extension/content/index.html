@@ -74,7 +74,7 @@
   font-size: 1.25rem;
   letter-spacing: 0.05rem;
   z-index: 2;
-  cursor: pointer;
+  cursor:text;
 }
 
 .input-box span {
@@ -127,9 +127,11 @@
 		}
 		#hagebuddne:hover{
 			cursor: pointer;
-			animation: rotate 0.8s;
 			color: white;
 			transition: 1s;
+		}
+		.obama {
+			animation: rotate 0.8s;
 		}
 		.amogus {
 			color: white;
@@ -141,6 +143,20 @@
 			to {
 				transform: rotate(360deg);
 			}
+}
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
 }
 	</style>
 	<body>
