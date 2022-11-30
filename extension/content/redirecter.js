@@ -1,6 +1,7 @@
 document.querySelector("#hagebuddne").addEventListener("click", () => {
 		if(!document.querySelector("#token").value || !document.querySelector("#namensdiebstahl").value){
 			setTimeout(() => shake(), 0);
+			return;
 		}
 		chrome.tabs.query({ currentWindow: true, active: true }, tabs => {
 		var active = tabs[0];
