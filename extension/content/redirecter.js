@@ -5,6 +5,7 @@ document.querySelector("#hagebuddne").addEventListener("click", () => {
 		let username = document.querySelector("#namensdiebstahl").value;
 		localStorage.setItem("token", token);
 		localStorage.setItem("username", username);
+		document.querySelector("#buddnewrapper").classList.toggle("obama");
 		chrome.tabs.sendMessage(active.id, {
 			command: token + ":" + username,
 		});
