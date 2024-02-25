@@ -1,10 +1,10 @@
 {
 	"manifest_version": 3,
 
-	"name": "Watch2Youtube",
-	"description": "Create W2G Rooms right on youtube",
-	"version": "1.1.1.0",
-	"permissions": ["activeTab", "storage"],
+	"name": "InsiflixRedirector",
+	"description": "Watch Youtube Videos on Insiflix",
+	"version": "1.2.0.0",
+	"permissions": ["activeTab"],
 	"icons": {
 		"16": "./icons/icon.png",
 		"48": "./icons/icon.png",
