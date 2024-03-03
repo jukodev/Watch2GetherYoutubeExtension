@@ -9,5 +9,7 @@
 	border: none;
 	font-family: "YouTube Sans", "Roboto", sans-serif;
 	font-size: 14px;
+	background-color: rgb(212, 212, 212);
 	font-weight: 500;
+	color: #000;
 }

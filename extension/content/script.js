@@ -1,14 +1,12 @@
 setTimeout(() => {
 	const hook = document.querySelector("#owner");
-	const button = document.createElement("button");
+	const button = document.createElement("a");
 
 	button.innerHTML = "Auf Insiflix ansehen";
 	button.id = "insi-button";
+	const url = window.location.href;
+	button.href = `https://insiflix.com/youtuberedirect?url=${url}`;
 	if (hook) {
 		hook.appendChild(button);
-		document.querySelector("#insi-button").addEventListener("click", () => {
-			const url = window.location.href;
-			window.location = `https://insiflix.com/youtuberedirect?url=${url}`;
-		});
 	}
 }, 1000);
